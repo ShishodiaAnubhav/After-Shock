@@ -23,7 +23,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EarthquakeActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<EarthQuake>> {
-    private static final String LOG_TAG = EarthquakeActivity.class.getName();
 
     private EarthquakeAdapter mAdapter;
 
@@ -42,7 +41,7 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderManag
 
         ListView earthquakeListView = findViewById(R.id.list);
 
-        mAdapter = new EarthquakeAdapter(this, new ArrayList<EarthQuake>());
+        mAdapter = new EarthquakeAdapter(this, new ArrayList<>());
 
         earthquakeListView.setAdapter(mAdapter);
 

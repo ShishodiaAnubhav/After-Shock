@@ -8,7 +8,6 @@ import android.content.Context;
 import java.util.List;
 
 public class EarthquakeLoader extends AsyncTaskLoader<List<EarthQuake>> {
-    private static final String LOG_TAG = EarthquakeLoader.class.getName();
 
     private String mUrl;
 
